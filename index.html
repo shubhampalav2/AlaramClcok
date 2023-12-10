@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaram Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div id="current-time"></div>
+            <div class="set-alaram">
+                <input type="number" name="hours" id="hr" min="1" max="12" placeholder="hr" required />
+                <input type="number" name="min" id="min" min="0" max="59" placeholder="min" required />
+                <input type="number" name="sec" id="sec" min="0" max="59" placeholder="sec" required />
+                <select name="options" id="time">
+                    <option value="AM">AM</option>
+                    <option value="PM">PM</option>
+                </select>
+
+                <button type="submit" class="btn btn-light set-time" id="set-alaram">Set Alaram</button>
+            </div>
+
+            <div id="alaram-list">
+                <h2 class="desc">Alarms</h2>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
